@@ -1,6 +1,6 @@
 *** Keywords ***
 Navigate To Homepage
-    Open Browser    ${siteUrl}    ${browser}
+    Open Browser    ${siteUrl}/#/login    ${browser}
     Maximize Browser Window
 
 Enter Username
@@ -21,4 +21,4 @@ Login To Platform
     Enter Username    gfaucompre+m_a_admin@alkemics.com
     Enter Password    kUe&q2m1^Rhu8bPx%yXfseNH4i*8^8
     Submit Login Form
-    Wait Until Page Contains Element    navbar    10
+    Wait Until Page Contains Element    class:navbar    10
